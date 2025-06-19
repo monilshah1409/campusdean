@@ -1,7 +1,7 @@
 /* Enhanced Footer Styles */
 footer {
     background: var(--secondary-color);
-    color: orange;
+    color: #ff3d3dde;
     padding: 70px 0 40px;
     box-shadow: 0 -8px 30px rgba(0, 0, 0, 0.4);
     font-family: 'Inter', sans-serif;
@@ -42,7 +42,7 @@ footer {
 
 .footer-section h3,
 .footer-section h4 {
-    color: orange;
+    color: #ff3d3dde;
     font-size: 18px;
     margin-bottom: 15px;
     font-weight: 700;
@@ -95,7 +95,7 @@ footer {
 }
 
 .footer-section ul li a:hover {
-    color: orange;
+    color: #ff3d3dde;
     padding-left: 20px; /* Keep padding-left to make space for the arrow */
 }
 
@@ -103,7 +103,7 @@ footer {
     content: "›";
     position: absolute;
     left: 0; /* Adjust left to be at the start of the padding */
-    color: #f39c12;
+    color: #ff3d3dde;
     font-weight: bold;
     font-size: 18px;
     top: 0;
@@ -113,7 +113,7 @@ footer {
 
 .footer-section ul li a:hover::before {
     left: 0; /* Keep left at 0 on hover */
-    color: #e67e22;
+    color: #ff3d3dde;
 }
 
 .footer-section.modules {
@@ -140,7 +140,7 @@ footer {
     width: 32px;
     height: 32px;
     background: rgba(255, 255, 255, 0.15);
-    color: var(--white);
+    color: #ff3d3dde;
     text-decoration: none;
     border-radius: 50%;
     transition: all 0.3s ease;
@@ -150,10 +150,10 @@ footer {
 }
 
 .social-links a:hover {
-    background: #f39c12;
+    background: #ff3d3dde;
     color: #fff;
     transform: translateY(-6px) scale(1.1);
-    box-shadow: 0 8px 15px rgba(243, 156, 18, 0.6);
+    box-shadow: 0 8px 15px rgba(255, 61, 61, 0.6);
 }
 
 .contact-info p {
@@ -166,9 +166,13 @@ footer {
 }
 
 .contact-info i {
-    color: #f39c12;
+    color: #ff3d3dde;
     width: 22px;
     text-align: center;
+}
+
+.contact-info i:hover {
+    color: #ff3d3dde;
 }
 
 .footer-newsletter {

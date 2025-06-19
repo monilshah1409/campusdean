@@ -6,7 +6,7 @@
 }
 
 :root {
-    --primary-color: #ff3d3d;
+    --primary-color: #ff3d3dde;
     --secondary-color: #333;
     --white: #ffffff;
     --light-gray: #f5f5f5;
@@ -173,17 +173,28 @@ body.loaded {
         margin-right: 0; /* Remove extra margin on logo */
     }
 
-    .nav-links.active {
-        display: flex;
-        flex-direction: column;
-        position: absolute;
-        top: 60px; /* Below the navbar */
+    .nav-links {
+        position: fixed;
+        top: 0;
         left: 0;
-        width: 100%;
+        height: 100vh;
+        width: 250px;
         background: var(--white);
-        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
-        padding: 20px 0;
-        text-align: center;
+        box-shadow: 2px 0 12px rgba(0, 0, 0, 0.2);
+        flex-direction: column;
+        padding: 60px 20px 20px 20px;
+        transform: translateX(-100%);
+        transition: transform 0.3s ease-in-out;
+        z-index: 1100;
+        overflow-y: auto;
+        border-right: 2px solid var(--primary-color); /* Temporary visible border */
+        background-color: #fff9f9; /* Temporary background color */
+    }
+
+    .nav-links.active {
+        transform: translateX(0);
+        display: flex;
+        text-align: left;
     }
 
     .nav-links.active a {
@@ -1070,7 +1081,7 @@ footer {
     }
 
     /* Hide search box in nav on mobile */
-    .search-box {
+    .search-box.active {
         display: none;
     }
 
