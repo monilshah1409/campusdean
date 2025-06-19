@@ -1,7 +1,7 @@
 /* Detailed Footer Styles */
 footer {
     background: linear-gradient(135deg, var(--secondary-color) 0%, #1a1a1a 100%);
-    color: var(--white);
+    color: orange;
     padding: 60px 0 0 0;
     position: relative;
     overflow: hidden;
@@ -29,7 +29,7 @@ footer::before {
 }
 
 .footer-section h3 {
-    color: var(--primary-color);
+    color: orange;
     margin-bottom: 20px;
     font-size: 28px;
     font-weight: 700;
@@ -102,7 +102,7 @@ footer::before {
 }
 
 .footer-section ul li a:hover {
-    color: var(--primary-color);
+    color: orange;
     transform: translateX(5px);
 }
 

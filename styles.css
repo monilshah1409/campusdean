@@ -428,7 +428,7 @@ body.loaded {
 /* Footer */
 footer {
     background: var(--secondary-color);
-    color: var(--white);
+    color: orange;
     padding: 20px 0;
     text-align: center;
 }

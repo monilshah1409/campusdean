@@ -1,7 +1,7 @@
 /* Enhanced Footer Styles */
 footer {
     background: var(--secondary-color);
-    color: var(--white);
+    color: orange;
     padding: 70px 0 40px;
     box-shadow: 0 -8px 30px rgba(0, 0, 0, 0.4);
     font-family: 'Inter', sans-serif;
@@ -42,7 +42,7 @@ footer {
 
 .footer-section h3,
 .footer-section h4 {
-    color: #f39c12;
+    color: orange;
     font-size: 18px;
     margin-bottom: 15px;
     font-weight: 700;
@@ -85,8 +85,8 @@ footer {
 .footer-section ul li a::before {
     content: "›";
     position: absolute;
-    left: -15px;
-    color: #f39c12;
+    left: -2px;
+    color: orange;
     font-weight: bold;
     font-size: 18px;
     top: 0;
@@ -95,12 +95,24 @@ footer {
 }
 
 .footer-section ul li a:hover {
+    color: orange;
+    padding-left: 20px; /* Keep padding-left to make space for the arrow */
+}
+
+.footer-section ul li a::before {
+    content: "›";
+    position: absolute;
+    left: 0; /* Adjust left to be at the start of the padding */
     color: #f39c12;
-    padding-left: 20px;
+    font-weight: bold;
+    font-size: 18px;
+    top: 0;
+    line-height: 1;
+    transition: all 0.3s ease;
 }
 
 .footer-section ul li a:hover::before {
-    left: -20px;
+    left: 0; /* Keep left at 0 on hover */
     color: #e67e22;
 }
 
