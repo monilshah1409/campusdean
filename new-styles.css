@@ -322,8 +322,14 @@ footer {
 
 /* Footer Responsive Styles */
 @media (max-width: 768px) {
+    footer {
+        padding: 20px 10px;
+    }
+
     .footer-grid {
-        grid-template-columns: 1fr; /* Stack sections vertically on smaller screens */
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
         text-align: center;
     }
 
@@ -343,10 +349,16 @@ footer {
     .footer-section.contact-info p,
     .footer-section.contact-info a {
         justify-content: center; /* Center contact info */
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
     }
 
     .social-links {
         margin-top: 20px;
+        justify-content: center;
+        display: flex;
+        gap: 15px;
     }
 
     .footer-section.about img {
@@ -499,6 +511,26 @@ footer {
     -webkit-tap-highlight-color: transparent;
 }
 
+.module-tabs .tab {
+    background: var(--light-gray);
+    padding: 15px 25px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: var(--transition);
+    font-weight: 600;
+    color: var(--dark-gray);
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    min-width: 180px; /* Ensure tabs have a minimum width */
+}
+
+.module-tabs .tab h3 {
+    margin: 0; /* Remove default margin from h3 inside tab */
+}
+
 .tab:hover {
     transform: translateY(-5px);
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
@@ -509,7 +541,7 @@ footer {
     background: var(--primary-color);
     color: var(--white);
     transform: translateY(-5px) scale(1.05);
-    box-shadow: 0 8px 25px rgba(255, 62, 62, 0.25);
+    box-shadow: 0 8px 25px rgba(255, 62, 62, 0.4);
     border-color: var(--primary-color);
 }
 
@@ -557,11 +589,20 @@ footer {
 }
 
 .module-info .module-details {
+    background: var(--white);
+    padding: 40px;
+    border-radius: 10px;
+    /* box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08); */
     max-width: 800px;
     margin: 0 auto;
     opacity: 0;
     transform: translateY(20px);
     transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 200px; /* Adjust as needed to give space for centering */
 }
 
 .module-info.active .module-details {
