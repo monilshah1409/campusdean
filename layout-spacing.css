@@ -1,0 +1,122 @@
+/* Reset spacing for all sections */
+section {
+    padding: 20px 0 !important;
+    margin: 0 !important;
+}
+
+/* Hero section specific */
+.hero {
+    padding: 0 !important;
+    margin-bottom: 20px !important;
+}
+
+/* Modules section */
+.modules {
+    padding: 20px 0 0 0 !important;
+    margin-bottom: 0 !important;
+}
+
+.module-content {
+    margin: 10px 0 0 0 !important;
+    padding: 15px !important;
+    min-height: auto !important;
+    margin-bottom: 0 !important;
+}
+
+.module-info {
+    position: static !important;
+    height: auto !important;
+    opacity: 0;
+    visibility: hidden;
+    display: none;
+    padding: 0 !important;
+    margin-bottom: 0 !important;
+}
+
+.module-info.active {
+    opacity: 1;
+    visibility: visible;
+    display: block;
+}
+
+/* Module details */
+.module-details {
+    margin: 0 auto !important;
+    padding: 0 !important;
+}
+
+.module-details h3 {
+    margin-bottom: 10px !important;
+}
+
+.module-details ul {
+    margin-bottom: 10px !important;
+}
+
+.module-details li {
+    margin-bottom: 8px !important;
+}
+
+.read-more {
+    margin-bottom: 0 !important;
+}
+
+/* Advantages section */
+.advantages {
+    padding: 0 !important;
+    margin-top: -30px !important;
+}
+
+.advantages .section-title {
+    margin: 0 0 15px 0 !important;
+    padding-top: 15px !important;
+}
+
+.advantages-grid {
+    margin-top: 15px !important;
+    gap: 15px !important;
+}
+
+/* Container spacing */
+.container {
+    padding: 0 20px !important;
+}
+
+/* Fix for scrolling */
+html, body {
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Footer spacing */
+footer {
+    margin-top: auto !important;
+    padding: 20px 0 0 0 !important;
+}
+
+.footer-content {
+    margin-bottom: 15px !important;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    section {
+        padding: 15px 0 !important;
+    }
+    
+    .advantages {
+        margin-top: -20px !important;
+    }
+    
+    .module-content {
+        margin: 10px 0 0 0 !important;
+        padding: 10px !important;
+    }
+}
